@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "SiPDrive")(type "KiCad")(uri "${KIPRJMOD}/kicad/libs/SiPDrive.kicad_sym")(options "")(descr ""))
+)

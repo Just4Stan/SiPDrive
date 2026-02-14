@@ -1,0 +1,25 @@
+# Build outputs
+build/
+build-*/
+
+# Toolchain dependencies (fetch locally)
+external/
+
+# Python/cache noise
+__pycache__/
+*.pyc
+
+# macOS
+.DS_Store
+
+# KiCad transient files
+*~.kicad_sch
+*~.kicad_pcb
+*.kicad_prl
+*-backups/
+*_autosave*.kicad_sch
+#auto_saved_files#
+fp-info-cache
+
+# IDE/agent local config
+.claude/
