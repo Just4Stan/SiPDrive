@@ -13,6 +13,7 @@ __pycache__/
 .DS_Store
 
 # KiCad transient files
+*.lck
 *~.kicad_sch
 *~.kicad_pcb
 *.kicad_prl
@@ -20,6 +21,9 @@ __pycache__/
 *_autosave*.kicad_sch
 #auto_saved_files#
 fp-info-cache
+
+# Large reference manuals (download separately - see README)
+hw/SiPDrive/datasheets/rm0440-*.pdf
 
 # IDE/agent local config
 .claude/
