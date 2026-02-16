@@ -1183,113 +1183,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "SiPDrive:HOSRX1206-3W-1MR-1%"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "R"
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "HOSRX1206-3W-1MR-1%"
-				(at 0 -5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "SiPDrive:RES-SMD_L3.2-W1.6_SR120620F0M50SZ"
-				(at 0 -7.62 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "LCSC Part" "C18724164"
-				(at 0 -10.16 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "HOSRX1206-3W-1MR-1%_0_1"
-				(rectangle
-					(start -2.54 1.27)
-					(end 2.54 -1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin unspecified line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 5.08 0 180)
-					(length 2.54)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "SiPDrive:MT6701QT-STD_C2913974"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -2453,6 +2346,150 @@
 					)
 				)
 				(pin unspecified line
+					(at -30.48 -111.76 0)
+					(length 2.54)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "33"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -30.48 -114.3 0)
+					(length 2.54)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "34"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -30.48 -116.84 0)
+					(length 2.54)
+					(name "PA8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "44"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -30.48 -119.38 0)
+					(length 2.54)
+					(name "PA9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "45"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -30.48 -124.46 0)
+					(length 2.54)
+					(name "PA15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "51"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -30.48 -127 0)
+					(length 2.54)
+					(name "PD2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "53"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -30.48 -129.54 0)
+					(length 2.54)
+					(name "PB3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "54"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -30.48 -132.08 0)
+					(length 2.54)
+					(name "PB9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "60"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
 					(at -30.48 -137.16 0)
 					(length 2.54)
 					(name "PC0"
@@ -3201,150 +3238,6 @@
 						)
 					)
 					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 96.52 -53.34 180)
-					(length 2.54)
-					(name "PB9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "60"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 96.52 -55.88 180)
-					(length 2.54)
-					(name "PB3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "54"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 96.52 -58.42 180)
-					(length 2.54)
-					(name "PD2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "53"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 96.52 -60.96 180)
-					(length 2.54)
-					(name "PA15"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "51"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 96.52 -66.04 180)
-					(length 2.54)
-					(name "PA9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "45"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 96.52 -68.58 180)
-					(length 2.54)
-					(name "PA8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "44"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 96.52 -71.12 180)
-					(length 2.54)
-					(name "NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "34"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 96.52 -73.66 180)
-					(length 2.54)
-					(name "NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "33"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4804,12 +4697,6 @@
 		(uuid "07cb4417-6f4e-42c4-b22a-46d3abe7efde")
 	)
 	(junction
-		(at 57.15 21.59)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0fdcc0c9-34a3-4d83-8d56-568a2abafeef")
-	)
-	(junction
 		(at 256.54 92.71)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4828,28 +4715,16 @@
 		(uuid "12549cb0-912b-4eb6-9389-5eb042ed9ef7")
 	)
 	(junction
-		(at 45.72 31.75)
+		(at 179.07 86.36)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "1dfb1bce-e9d0-4cb1-afac-03d362012ae9")
-	)
-	(junction
-		(at 297.18 218.44)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1ec9a579-fc0f-4a41-814a-92de947bf430")
+		(uuid "1577bf3e-a3d4-4fe5-83b4-6368fb96a786")
 	)
 	(junction
 		(at 297.18 132.08)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "229ce5c9-9e94-4310-827a-14bca159ddbc")
-	)
-	(junction
-		(at 45.72 21.59)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2321d587-d1a7-4e7d-9162-3ba9bab8f0fc")
 	)
 	(junction
 		(at 218.44 39.37)
@@ -4874,6 +4749,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2d5fc1f3-a653-47a2-b2a1-da208f732197")
+	)
+	(junction
+		(at 297.18 147.32)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "325de1d0-239d-4586-b9bf-29f0a6021612")
 	)
 	(junction
 		(at 256.54 154.94)
@@ -4942,6 +4823,12 @@
 		(uuid "5aa0995e-3d1f-495a-b596-bc17aa403317")
 	)
 	(junction
+		(at 297.18 92.71)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5b5737d4-fb13-432d-9718-dcbdcade0aed")
+	)
+	(junction
 		(at 163.83 260.35)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4966,34 +4853,22 @@
 		(uuid "5fa3322b-a519-43fb-812a-f3889cf54931")
 	)
 	(junction
-		(at 297.18 83.82)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "62dae00d-a5cf-4185-9fef-df14a0b6287f")
-	)
-	(junction
 		(at 163.83 229.87)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "656ffcb0-9adf-4d9d-80a5-7abbb42b349b")
 	)
 	(junction
-		(at 297.18 93.98)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "69807ebc-74f9-4d75-a252-d22d97da98dc")
-	)
-	(junction
-		(at 297.18 144.78)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "69d6c526-b30b-439b-9029-72823e347f41")
-	)
-	(junction
 		(at 139.7 176.53)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6a67844c-a5d3-4b82-846b-4f7f8b8dbfae")
+	)
+	(junction
+		(at 297.18 85.09)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7816f7a5-e095-4863-adee-bba53727aed7")
 	)
 	(junction
 		(at 30.48 46.99)
@@ -5020,6 +4895,12 @@
 		(uuid "9324d6e6-1e52-40a9-bdbc-07a3e4c94bda")
 	)
 	(junction
+		(at 297.18 154.94)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "97accfdb-085b-40af-a114-cadb2131cb9d")
+	)
+	(junction
 		(at 122.8599 191.77)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5036,6 +4917,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a465974f-a029-4b48-889f-3fb6bb11d7db")
+	)
+	(junction
+		(at 297.18 209.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a578e443-9a52-4ab6-9615-ea277306b70c")
 	)
 	(junction
 		(at 157.48 137.16)
@@ -5068,12 +4955,6 @@
 		(uuid "ba42facb-a843-43b7-a8f6-e40a250d5261")
 	)
 	(junction
-		(at 297.18 208.28)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ba53bd49-34aa-49cd-bdf9-4087bbd879d4")
-	)
-	(junction
 		(at 45.72 265.43)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5090,12 +4971,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "bee055c2-54bb-4644-bb6d-7cfb60ab7db7")
-	)
-	(junction
-		(at 67.31 21.59)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "beedc8ce-1129-47ec-87c3-5aa9c1ce2f47")
 	)
 	(junction
 		(at 22.86 21.59)
@@ -5188,10 +5063,10 @@
 		(uuid "fa8386b5-cd63-465c-993f-cf079b883bd7")
 	)
 	(junction
-		(at 297.18 154.94)
+		(at 297.18 217.17)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "facb1851-5ae6-4e57-8328-1448d2c50f77")
+		(uuid "fc964513-926c-491d-8d2e-1b196c55275b")
 	)
 	(junction
 		(at 118.11 238.76)
@@ -5206,7 +5081,7 @@
 		(uuid "fec6abae-401b-4587-8ae6-9d0854ebbcb2")
 	)
 	(no_connect
-		(at 349.25 128.27)
+		(at 191.77 212.09)
 		(uuid "013a7fb4-5951-4e69-8179-9ceb0147eda2")
 	)
 	(no_connect
@@ -5218,15 +5093,11 @@
 		(uuid "2879c275-ef3c-409b-be17-3af0e52aa610")
 	)
 	(no_connect
-		(at 349.25 113.03)
-		(uuid "28862d87-dfcf-4ee3-8e21-cb444c5740e9")
-	)
-	(no_connect
-		(at 349.25 135.89)
+		(at 191.77 204.47)
 		(uuid "41a4ff49-253e-400e-ba1c-21954b796735")
 	)
 	(no_connect
-		(at 349.25 123.19)
+		(at 191.77 217.17)
 		(uuid "52875de9-a6a4-44a6-aa7f-5eea462b4082")
 	)
 	(no_connect
@@ -5242,7 +5113,7 @@
 		(uuid "670be92e-c8fb-4bf1-b6ff-aeb0f720b5b8")
 	)
 	(no_connect
-		(at 349.25 118.11)
+		(at 191.77 222.25)
 		(uuid "690a6f1a-9927-4c55-8cf5-840a74207e7e")
 	)
 	(no_connect
@@ -5262,6 +5133,10 @@
 		(uuid "83dfe084-90ea-4abf-943f-487bbbd8a22e")
 	)
 	(no_connect
+		(at 162.56 168.91)
+		(uuid "901cc804-4230-4360-811b-88accd3eddd9")
+	)
+	(no_connect
 		(at 252.73 243.84)
 		(uuid "90e2091d-08a8-4a20-baa7-b29b39c0daff")
 	)
@@ -5270,31 +5145,27 @@
 		(uuid "9de53f7d-f05b-4170-bdc8-679d7c6a1f49")
 	)
 	(no_connect
-		(at 349.25 110.49)
-		(uuid "a0b39fe2-5ddb-47aa-98b9-c7e8ce18f460")
-	)
-	(no_connect
-		(at 162.56 168.91)
-		(uuid "a24be4f1-5753-4d17-8645-a8d4207be0b1")
-	)
-	(no_connect
-		(at 349.25 125.73)
-		(uuid "b3087110-13a2-49ba-9ee7-3401323f0aee")
+		(at 252.73 231.14)
+		(uuid "bfbfad58-2631-4178-bc31-7add2807ac86")
 	)
 	(no_connect
 		(at 139.7 166.37)
 		(uuid "c1ac4b1b-a888-42f1-a6a6-5605ed572fa3")
 	)
 	(no_connect
-		(at 349.25 120.65)
+		(at 252.73 233.68)
+		(uuid "c8c3ff4d-c7b5-42f2-849c-cc71cdfadf32")
+	)
+	(no_connect
+		(at 191.77 219.71)
 		(uuid "ce6a26cf-f87c-425f-b610-52c773cc0f4d")
 	)
 	(no_connect
-		(at 349.25 115.57)
+		(at 191.77 224.79)
 		(uuid "d25ee875-09c9-42c0-8e38-421dd15e0a9a")
 	)
 	(no_connect
-		(at 349.25 130.81)
+		(at 191.77 209.55)
 		(uuid "d38f15ca-ce8f-4e53-8fa5-f59fbd59fd6d")
 	)
 	(no_connect
@@ -5322,7 +5193,7 @@
 		(uuid "ecf34ad0-2cd1-4862-b866-571eeba71a79")
 	)
 	(no_connect
-		(at 349.25 133.35)
+		(at 191.77 207.01)
 		(uuid "ed5dffbc-4053-4daa-b53c-7af59c3ca985")
 	)
 	(no_connect
@@ -5465,16 +5336,6 @@
 	)
 	(wire
 		(pts
-			(xy 317.5 109.22) (xy 312.42 109.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "13959e8d-1016-40f0-9293-09cd95b9aa14")
-	)
-	(wire
-		(pts
 			(xy 162.56 198.12) (xy 171.45 198.12)
 		)
 		(stroke
@@ -5565,7 +5426,7 @@
 	)
 	(wire
 		(pts
-			(xy 297.18 85.09) (xy 297.18 83.82)
+			(xy 297.18 82.55) (xy 297.18 85.09)
 		)
 		(stroke
 			(width 0)
@@ -5895,16 +5756,6 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 31.75) (xy 57.15 31.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "52c1924e-f1b9-4f43-8455-e4da709fd134")
-	)
-	(wire
-		(pts
 			(xy 144.78 54.61) (xy 157.48 54.61)
 		)
 		(stroke
@@ -5912,16 +5763,6 @@
 			(type default)
 		)
 		(uuid "533a724a-6c3f-45c2-a719-9fceb57090ec")
-	)
-	(wire
-		(pts
-			(xy 297.18 153.67) (xy 297.18 154.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "53ce235e-5c43-4516-8c10-54531cdf1caf")
 	)
 	(wire
 		(pts
@@ -6205,16 +6046,6 @@
 	)
 	(wire
 		(pts
-			(xy 317.5 171.45) (xy 312.42 171.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7502fcde-c835-4855-8d7b-803ef319fe04")
-	)
-	(wire
-		(pts
 			(xy 130.81 176.53) (xy 132.08 176.53)
 		)
 		(stroke
@@ -6305,13 +6136,13 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 21.59) (xy 57.15 21.59)
+			(xy 317.5 109.22) (xy 312.42 109.22)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "83fd99e8-dc05-4159-8050-d9073d4bee5e")
+		(uuid "8447da1a-87cb-445e-adfe-5d7a46e845c0")
 	)
 	(wire
 		(pts
@@ -6362,16 +6193,6 @@
 			(type default)
 		)
 		(uuid "8be36067-d2fd-477b-aa99-26337cbbcbd6")
-	)
-	(wire
-		(pts
-			(xy 297.18 83.82) (xy 297.18 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8cf14c80-968e-4aba-9aac-07d8e36fddbb")
 	)
 	(wire
 		(pts
@@ -6432,6 +6253,16 @@
 			(type default)
 		)
 		(uuid "9686fefc-8641-4eed-87a9-56f30959fa30")
+	)
+	(wire
+		(pts
+			(xy 179.07 86.36) (xy 191.77 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9690f7d0-0192-4a9e-9300-33113e9c2d5e")
 	)
 	(wire
 		(pts
@@ -6562,6 +6393,16 @@
 			(type default)
 		)
 		(uuid "abf6c95d-3c12-4410-b467-150c8e3ab9ea")
+	)
+	(wire
+		(pts
+			(xy 317.5 171.45) (xy 312.42 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ace5d420-e60e-437c-bea9-b2a0494ec7d2")
 	)
 	(wire
 		(pts
@@ -6785,7 +6626,7 @@
 	)
 	(wire
 		(pts
-			(xy 34.29 21.59) (xy 45.72 21.59)
+			(xy 34.29 21.59) (xy 67.31 21.59)
 		)
 		(stroke
 			(width 0)
@@ -6835,17 +6676,7 @@
 	)
 	(wire
 		(pts
-			(xy 297.18 209.55) (xy 297.18 208.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cc8dbd8f-51ad-4811-835b-4d9581f46ce6")
-	)
-	(wire
-		(pts
-			(xy 171.45 86.36) (xy 191.77 86.36)
+			(xy 171.45 86.36) (xy 179.07 86.36)
 		)
 		(stroke
 			(width 0)
@@ -6915,16 +6746,6 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 21.59) (xy 67.31 21.59)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d4a30bc1-ff5c-4242-84bc-a0afe5149afe")
-	)
-	(wire
-		(pts
 			(xy 252.73 201.93) (xy 278.13 201.93)
 		)
 		(stroke
@@ -6972,16 +6793,6 @@
 			(type default)
 		)
 		(uuid "db3a1309-3bbf-4025-a574-5a45d2cb277b")
-	)
-	(wire
-		(pts
-			(xy 297.18 93.98) (xy 297.18 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "db3d853e-3324-4f7a-a34a-517dc03eb5b4")
 	)
 	(wire
 		(pts
@@ -7075,7 +6886,7 @@
 	)
 	(wire
 		(pts
-			(xy 34.29 31.75) (xy 45.72 31.75)
+			(xy 34.29 31.75) (xy 57.15 31.75)
 		)
 		(stroke
 			(width 0)
@@ -7225,7 +7036,7 @@
 	)
 	(wire
 		(pts
-			(xy 297.18 208.28) (xy 297.18 207.01)
+			(xy 297.18 207.01) (xy 297.18 209.55)
 		)
 		(stroke
 			(width 0)
@@ -10624,7 +10435,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C14445"
+		(property "LCSC" "C52923"
 			(at 20.32 270.51 0)
 			(effects
 				(font
@@ -10643,6 +10454,91 @@
 			(project "SiPDrive"
 				(path "/1bd0e062-70ad-400b-840c-d90635802637"
 					(reference "C17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_FET:BS108")
+		(at 294.64 139.7 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "061af090-35a1-4eb4-a5f6-7ca37f7d0474")
+		(property "Reference" "Q4"
+			(at 300.99 138.4299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SP40N03GNJ"
+			(at 300.99 140.9699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "SiPDrive:POWERPAK-1212-8_L3.0-W3.0-P0.65-LS3.3-BL"
+			(at 299.72 141.605 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 299.72 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 294.64 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C22466709"
+			(at 294.64 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "c145c4d5-5139-4220-8cf5-7edd3a7b1222")
+		)
+		(pin "1"
+			(uuid "5ad77849-ccfc-4535-b49b-4a78fe1f5495")
+		)
+		(pin "2"
+			(uuid "6fd25b34-42fd-4ffd-b3af-2bd83d48db8d")
+		)
+		(instances
+			(project "SiPDrive"
+				(path "/1bd0e062-70ad-400b-840c-d90635802637"
+					(reference "Q4")
 					(unit 1)
 				)
 			)
@@ -10709,150 +10605,6 @@
 			(project "SiPDrive"
 				(path "/1bd0e062-70ad-400b-840c-d90635802637"
 					(reference "#PWR017")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 317.5 109.22 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "084f4210-83c2-4555-8ccf-9bb2c871364f")
-		(property "Reference" "#PWR053"
-			(at 317.5 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 314.198 110.998 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 317.5 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 317.5 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 317.5 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "9dd599b2-b66f-45f2-8015-9db36ff85024")
-		)
-		(instances
-			(project "SiPDrive"
-				(path "/1bd0e062-70ad-400b-840c-d90635802637"
-					(reference "#PWR053")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "SiPDrive:GRM32EC72A106KE05L")
-		(at 121.92 -74.93 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "09ae7480-c65d-4db0-9930-02b3f4e1e88e")
-		(property "Reference" "C24"
-			(at 49.53 25.3999 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "10uF"
-			(at 49.53 27.9399 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "SiPDrive:C1210"
-			(at 53.34 -74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 121.92 -74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 121.92 -74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C576517"
-			(at 55.88 -74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "63e326bd-c203-464d-89e3-a61392b07f13")
-		)
-		(pin "2"
-			(uuid "cc014b49-f036-4bb7-abec-f75e86ff6504")
-		)
-		(instances
-			(project "SiPDrive"
-				(path "/1bd0e062-70ad-400b-840c-d90635802637"
-					(reference "C24")
 					(unit 1)
 				)
 			)
@@ -11172,91 +10924,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_FET:BS108")
-		(at 294.64 179.07 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0eb5837d-40ec-4861-9738-27bed635fd8d")
-		(property "Reference" "Q5"
-			(at 300.99 177.7999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "CMSA015N06"
-			(at 300.99 180.3399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "SiPDrive:PDFN-8_L5.8-W5.0-P1.27-LS6.1-BL"
-			(at 299.72 180.975 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 299.72 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 294.64 179.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C42428219"
-			(at 294.64 179.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "ba6371bb-30f1-4ce7-969a-7c8697495de3")
-		)
-		(pin "1"
-			(uuid "e94c6955-3ad5-467b-bdd5-c9a67708159b")
-		)
-		(pin "2"
-			(uuid "8d96f995-db70-4c56-9b50-2e4de485f236")
-		)
-		(instances
-			(project "SiPDrive"
-				(path "/1bd0e062-70ad-400b-840c-d90635802637"
-					(reference "Q5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 275.59 144.78 270)
 		(unit 1)
@@ -11308,7 +10975,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C138031"
+		(property "LCSC" "C25553"
 			(at 275.59 144.78 90)
 			(effects
 				(font
@@ -11327,6 +10994,91 @@
 			(project "SiPDrive"
 				(path "/1bd0e062-70ad-400b-840c-d90635802637"
 					(reference "R30")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_FET:BS108")
+		(at 294.64 77.47 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "110cd03e-dfdd-44cd-bbc6-a5600428a681")
+		(property "Reference" "Q2"
+			(at 300.99 76.1999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SP40N03GNJ"
+			(at 300.99 78.7399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "SiPDrive:POWERPAK-1212-8_L3.0-W3.0-P0.65-LS3.3-BL"
+			(at 299.72 79.375 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 299.72 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 294.64 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C22466709"
+			(at 294.64 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "fd2c42d2-db09-4248-8748-538550dd0dcb")
+		)
+		(pin "1"
+			(uuid "09564a0f-049b-47d8-b98e-3b4500bce35b")
+		)
+		(pin "2"
+			(uuid "ec89df6e-2e46-427c-8bfb-c88ab8f0cf3e")
+		)
+		(instances
+			(project "SiPDrive"
+				(path "/1bd0e062-70ad-400b-840c-d90635802637"
+					(reference "Q2")
 					(unit 1)
 				)
 			)
@@ -11472,71 +11224,6 @@
 			(project "SiPDrive"
 				(path "/1bd0e062-70ad-400b-840c-d90635802637"
 					(reference "#PWR034")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 317.5 171.45 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "175dc273-4ebc-4d2c-b754-e2dbb3924451")
-		(property "Reference" "#PWR054"
-			(at 317.5 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 314.198 173.228 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 317.5 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 317.5 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 317.5 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "283c881a-ac40-4747-a747-54089a6a0c63")
-		)
-		(instances
-			(project "SiPDrive"
-				(path "/1bd0e062-70ad-400b-840c-d90635802637"
-					(reference "#PWR054")
 					(unit 1)
 				)
 			)
@@ -11747,7 +11434,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C138031"
+		(property "LCSC" "C25756"
 			(at 254 223.52 90)
 			(effects
 				(font
@@ -12060,91 +11747,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_FET:BS108")
-		(at 294.64 139.7 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "238cba41-050e-4e9e-9bcb-d6ae4599d3ea")
-		(property "Reference" "Q4"
-			(at 300.99 138.4299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "CMSA015N06"
-			(at 300.99 140.9699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "SiPDrive:PDFN-8_L5.8-W5.0-P1.27-LS6.1-BL"
-			(at 299.72 141.605 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 299.72 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 294.64 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C42428219"
-			(at 294.64 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "84cea762-1d9c-4e7a-997a-9eda5ce10e03")
-		)
-		(pin "1"
-			(uuid "916c5f7e-cdb1-44e0-9dcf-4cc6ce1aaa4f")
-		)
-		(pin "2"
-			(uuid "cefa6413-6f7d-441e-8433-49de0e2a4773")
-		)
-		(instances
-			(project "SiPDrive"
-				(path "/1bd0e062-70ad-400b-840c-d90635802637"
-					(reference "Q4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 271.78 212.09 0)
 		(unit 1)
@@ -12204,6 +11806,91 @@
 			(project "SiPDrive"
 				(path "/1bd0e062-70ad-400b-840c-d90635802637"
 					(reference "#PWR051")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_FET:BS108")
+		(at 294.64 179.07 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2791c918-ebda-4ab6-bc08-428557585a9a")
+		(property "Reference" "Q5"
+			(at 300.99 177.7999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SP40N03GNJ"
+			(at 300.99 180.3399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "SiPDrive:POWERPAK-1212-8_L3.0-W3.0-P0.65-LS3.3-BL"
+			(at 299.72 180.975 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 299.72 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 294.64 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C22466709"
+			(at 294.64 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "3095d00f-131a-48e9-8ba9-3e8b55cd6623")
+		)
+		(pin "1"
+			(uuid "459f44cf-c65f-4a8f-af68-0a4d9b49673b")
+		)
+		(pin "2"
+			(uuid "4f5265c6-6712-4d31-9d4d-821a0137376b")
+		)
+		(instances
+			(project "SiPDrive"
+				(path "/1bd0e062-70ad-400b-840c-d90635802637"
+					(reference "Q5")
 					(unit 1)
 				)
 			)
@@ -12357,7 +12044,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C138031"
+		(property "LCSC" "C25553"
 			(at 275.59 82.55 90)
 			(effects
 				(font
@@ -12433,7 +12120,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C138031"
+		(property "LCSC" "C25867"
 			(at 287.02 217.17 90)
 			(effects
 				(font
@@ -12794,7 +12481,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C114763"
+		(property "LCSC" "C25530"
 			(at 163.83 256.54 90)
 			(effects
 				(font
@@ -13107,85 +12794,6 @@
 		)
 	)
 	(symbol
-		(lib_id "SiPDrive:HOSRX1206-3W-1MR-1%")
-		(at 297.18 88.9 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3ab9735b-7dcd-4243-8e54-149ac1f28660")
-		(property "Reference" "R1"
-			(at 299.72 87.6299 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "HOSRX"
-			(at 299.72 90.1699 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "SiPDrive:RES-SMD_L3.2-W1.6_SR120620F0M50SZ"
-			(at 304.8 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 297.18 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 297.18 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C18724164"
-			(at 307.34 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "df185ff1-948e-4967-b6d7-bfa2934bc9e1")
-		)
-		(pin "1"
-			(uuid "1038f5eb-86c0-45d1-b2ab-367f60610550")
-		)
-		(instances
-			(project ""
-				(path "/1bd0e062-70ad-400b-840c-d90635802637"
-					(reference "R1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 214.63 43.18 90)
 		(unit 1)
@@ -13246,6 +12854,84 @@
 			(project "SiPDrive"
 				(path "/1bd0e062-70ad-400b-840c-d90635802637"
 					(reference "TP3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 308.61 109.22 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3b55cd65-4d84-4043-8167-e640daeb1bc8")
+		(property "Reference" "C28"
+			(at 310.642 105.156 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1uF"
+			(at 310.642 102.616 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 312.42 108.2548 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 308.61 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 308.61 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C1518208"
+			(at 308.61 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fef2064a-6070-4639-84cb-a3c50a3282e4")
+		)
+		(pin "2"
+			(uuid "dcd72ae2-d637-4992-9191-26673a1eaf30")
+		)
+		(instances
+			(project "SiPDrive"
+				(path "/1bd0e062-70ad-400b-840c-d90635802637"
+					(reference "C28")
 					(unit 1)
 				)
 			)
@@ -13466,84 +13152,6 @@
 			(project "SiPDrive"
 				(path "/1bd0e062-70ad-400b-840c-d90635802637"
 					(reference "C9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 308.61 109.22 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "43f9aca9-f23c-4c01-9f19-0d050d89ed1d")
-		(property "Reference" "C28"
-			(at 311.15 104.14 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "220n"
-			(at 311.15 101.6 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 312.42 108.2548 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 308.61 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 308.61 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C162178"
-			(at 308.61 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e18a51bc-3f1c-4644-ad91-fb270ffde79c")
-		)
-		(pin "2"
-			(uuid "a338c7c6-0e74-48f0-ba16-c54e563e22a6")
-		)
-		(instances
-			(project "SiPDrive"
-				(path "/1bd0e062-70ad-400b-840c-d90635802637"
-					(reference "C28")
 					(unit 1)
 				)
 			)
@@ -13969,91 +13577,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_FET:BS108")
-		(at 294.64 201.93 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4a906436-5161-446c-bf48-671f673cb1b0")
-		(property "Reference" "Q6"
-			(at 300.99 200.6599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "CMSA015N06"
-			(at 300.99 203.1999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "SiPDrive:PDFN-8_L5.8-W5.0-P1.27-LS6.1-BL"
-			(at 299.72 203.835 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 299.72 205.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 294.64 201.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C42428219"
-			(at 294.64 201.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "03d4da0f-2988-4342-978c-e27616593ee8")
-		)
-		(pin "1"
-			(uuid "01b1e864-c67f-4513-9cf6-c4f5a9b2a326")
-		)
-		(pin "2"
-			(uuid "ec1bb625-264d-4dd0-b865-655cd2a7a452")
-		)
-		(instances
-			(project "SiPDrive"
-				(path "/1bd0e062-70ad-400b-840c-d90635802637"
-					(reference "Q6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 135.89 176.53 270)
 		(unit 1)
@@ -14203,84 +13726,6 @@
 			(project ""
 				(path "/1bd0e062-70ad-400b-840c-d90635802637"
 					(reference "D1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 308.61 171.45 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "4f5e7d79-30be-48d0-a2b7-c38dd6dbe9b2")
-		(property "Reference" "C29"
-			(at 311.15 166.37 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "220n"
-			(at 311.15 163.83 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 312.42 170.4848 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 308.61 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 308.61 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C162178"
-			(at 308.61 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "294be5bd-1fa6-46f5-97c0-861a85d42fff")
-		)
-		(pin "2"
-			(uuid "9ff2bc3d-cd47-452b-9fc2-790ed925e5ac")
-		)
-		(instances
-			(project "SiPDrive"
-				(path "/1bd0e062-70ad-400b-840c-d90635802637"
-					(reference "C29")
 					(unit 1)
 				)
 			)
@@ -14492,7 +13937,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C138031"
+		(property "LCSC" "C25867"
 			(at 287.02 209.55 90)
 			(effects
 				(font
@@ -14568,7 +14013,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C138031"
+		(property "LCSC" "C25867"
 			(at 287.02 85.09 90)
 			(effects
 				(font
@@ -14587,91 +14032,6 @@
 			(project "SiPDrive"
 				(path "/1bd0e062-70ad-400b-840c-d90635802637"
 					(reference "R22")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_FET:BS108")
-		(at 294.64 116.84 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5d53a563-d63e-40d0-947f-b34f2fd58d1e")
-		(property "Reference" "Q3"
-			(at 300.99 115.5699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "CMSA015N06"
-			(at 300.99 118.1099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "SiPDrive:PDFN-8_L5.8-W5.0-P1.27-LS6.1-BL"
-			(at 299.72 118.745 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 299.72 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 294.64 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C42428219"
-			(at 294.64 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "072d4a5b-d437-4380-84d5-2186130a294b")
-		)
-		(pin "1"
-			(uuid "12cf6aa0-e7ec-4399-aead-f420adcc0cc5")
-		)
-		(pin "2"
-			(uuid "e394e3cd-3ef2-4185-aa19-c1948b9d5d6c")
-		)
-		(instances
-			(project "SiPDrive"
-				(path "/1bd0e062-70ad-400b-840c-d90635802637"
-					(reference "Q3")
 					(unit 1)
 				)
 			)
@@ -14755,7 +14115,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 297.18 95.25 0)
+		(at 297.18 93.98 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14764,7 +14124,7 @@
 		(fields_autoplaced yes)
 		(uuid "600d6795-3f48-4a2b-b4d2-e35653403b1f")
 		(property "Reference" "#PWR02"
-			(at 297.18 101.6 0)
+			(at 297.18 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14773,7 +14133,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 297.18 100.33 0)
+			(at 297.18 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14781,7 +14141,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 297.18 95.25 0)
+			(at 297.18 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14790,7 +14150,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 297.18 95.25 0)
+			(at 297.18 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14799,7 +14159,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 297.18 95.25 0)
+			(at 297.18 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14950,85 +14310,6 @@
 		)
 	)
 	(symbol
-		(lib_id "SiPDrive:HOSRX1206-3W-1MR-1%")
-		(at 297.18 213.36 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "63b1d67d-3a7d-4ea3-b68f-d1bd3c5b5bd8")
-		(property "Reference" "R19"
-			(at 299.72 212.0899 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "HOSRX"
-			(at 299.72 214.6299 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "SiPDrive:RES-SMD_L3.2-W1.6_SR120620F0M50SZ"
-			(at 304.8 213.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 297.18 213.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 297.18 213.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C18724164"
-			(at 307.34 213.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "24d538dd-efc2-4ad6-b593-e949b441feb2")
-		)
-		(pin "1"
-			(uuid "6109244a-b2f6-4276-8d49-9f8fc5614b36")
-		)
-		(instances
-			(project "SiPDrive"
-				(path "/1bd0e062-70ad-400b-840c-d90635802637"
-					(reference "R19")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 45.72 270.51 0)
 		(unit 1)
@@ -15083,7 +14364,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C14445"
+		(property "LCSC" "C52923"
 			(at 45.72 270.51 0)
 			(effects
 				(font
@@ -15184,85 +14465,6 @@
 		)
 	)
 	(symbol
-		(lib_id "SiPDrive:GRM32EC72A106KE05L")
-		(at 143.51 -74.93 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "681f255d-fbef-4301-ac69-1d4dfd45f7f6")
-		(property "Reference" "C26"
-			(at 71.12 25.3999 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "10uF"
-			(at 71.12 27.9399 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "SiPDrive:C1210"
-			(at 74.93 -74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 143.51 -74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 143.51 -74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C576517"
-			(at 77.47 -74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "887ff2f8-c35c-403c-9d80-7934563b67dc")
-		)
-		(pin "2"
-			(uuid "faf81078-b3b6-4bc6-ac59-a1f35be95d45")
-		)
-		(instances
-			(project "SiPDrive"
-				(path "/1bd0e062-70ad-400b-840c-d90635802637"
-					(reference "C26")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 275.59 87.63 270)
 		(unit 1)
@@ -15314,7 +14516,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C138031"
+		(property "LCSC" "C25553"
 			(at 275.59 87.63 90)
 			(effects
 				(font
@@ -15390,7 +14592,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C138031"
+		(property "LCSC" "C25867"
 			(at 287.02 92.71 90)
 			(effects
 				(font
@@ -15812,6 +15014,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 317.5 109.22 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6fc67273-6890-400a-998c-ab95af51aae2")
+		(property "Reference" "#PWR053"
+			(at 317.5 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 314.198 110.998 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 317.5 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 317.5 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 317.5 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "580d674f-59d0-49c4-b288-d70ea68f5f55")
+		)
+		(instances
+			(project "SiPDrive"
+				(path "/1bd0e062-70ad-400b-840c-d90635802637"
+					(reference "#PWR053")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 275.59 207.01 270)
 		(unit 1)
@@ -15863,7 +15130,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C138031"
+		(property "LCSC" "C25553"
 			(at 275.59 207.01 90)
 			(effects
 				(font
@@ -16071,7 +15338,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C138031"
+		(property "LCSC" "C25756"
 			(at 254 161.29 90)
 			(effects
 				(font
@@ -16533,6 +15800,82 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 297.18 151.13 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8b0f0fe2-1474-4c14-944e-a0134efd19fb")
+		(property "Reference" "R1"
+			(at 300.736 150.368 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1mR"
+			(at 300.736 152.146 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 298.958 151.13 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 297.18 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 297.18 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C20160272"
+			(at 297.18 151.13 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "d93cf52d-114f-4dd2-963a-d3a274b83b51")
+		)
+		(pin "1"
+			(uuid "f3362913-3df0-4a9e-85ce-79554cc1c729")
+		)
+		(instances
+			(project "SiPDrive"
+				(path "/1bd0e062-70ad-400b-840c-d90635802637"
+					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 217.17 265.43 0)
 		(unit 1)
@@ -16599,6 +15942,85 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 179.07 90.17 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8d29e3fb-da93-4953-a210-d04c9fd5a493")
+		(property "Reference" "C31"
+			(at 182.88 88.8999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1uF"
+			(at 182.88 91.4399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 180.0352 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 179.07 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 179.07 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 179.07 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "02ce4e7c-87ea-4e1d-95b2-f0d2a373f0c8")
+		)
+		(pin "2"
+			(uuid "6edc88c1-bfbb-4c34-860b-2fe8d4505c79")
+		)
+		(instances
+			(project "SiPDrive"
+				(path "/1bd0e062-70ad-400b-840c-d90635802637"
+					(reference "C31")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 275.59 149.86 270)
 		(unit 1)
@@ -16650,7 +16072,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C138031"
+		(property "LCSC" "C25553"
 			(at 275.59 149.86 90)
 			(effects
 				(font
@@ -17078,56 +16500,33 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_FET:BS108")
-		(at 294.64 77.47 0)
+		(lib_id "power:GND")
+		(at 317.5 171.45 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9ed58c00-1dd4-4f8d-9aab-a4d8eed30983")
-		(property "Reference" "Q2"
-			(at 300.99 76.1999 0)
+		(uuid "a00589dd-dd5b-4abf-9790-5f2e3d95e8d0")
+		(property "Reference" "#PWR054"
+			(at 317.5 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
-			)
-		)
-		(property "Value" "CMSA015N06"
-			(at 300.99 78.7399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "SiPDrive:PDFN-8_L5.8-W5.0-P1.27-LS6.1-BL"
-			(at 299.72 79.375 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 299.72 81.28 0)
+		(property "Value" "GND"
+			(at 314.198 173.228 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
-				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 294.64 77.47 0)
+		(property "Footprint" ""
+			(at 317.5 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17135,8 +16534,8 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C42428219"
-			(at 294.64 77.47 0)
+		(property "Datasheet" ""
+			(at 317.5 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17144,19 +16543,22 @@
 				(hide yes)
 			)
 		)
-		(pin "3"
-			(uuid "38b1cba7-0ba0-4d0f-bbad-58a254276dac")
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 317.5 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
 		(pin "1"
-			(uuid "5f1a5fe7-d047-435c-bd23-b1e826f36020")
-		)
-		(pin "2"
-			(uuid "33191045-8ffe-47b4-b5a7-d1fb383872a1")
+			(uuid "98961f6f-622c-401c-abee-361bd5d9cc0e")
 		)
 		(instances
 			(project "SiPDrive"
 				(path "/1bd0e062-70ad-400b-840c-d90635802637"
-					(reference "Q2")
+					(reference "#PWR054")
 					(unit 1)
 				)
 			)
@@ -17355,7 +16757,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C138031"
+		(property "LCSC" "C25553"
 			(at 275.59 212.09 90)
 			(effects
 				(font
@@ -17771,7 +17173,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C114763"
+		(property "LCSC" "C25530"
 			(at 163.83 226.06 90)
 			(effects
 				(font
@@ -17790,85 +17192,6 @@
 			(project "SiPDrive"
 				(path "/1bd0e062-70ad-400b-840c-d90635802637"
 					(reference "R10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "SiPDrive:GRM32EC72A106KE05L")
-		(at 133.35 -74.93 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b409396e-2054-480a-8c3a-65ef34774ce2")
-		(property "Reference" "C25"
-			(at 60.96 25.3999 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "10uF"
-			(at 60.96 27.9399 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "SiPDrive:C1210"
-			(at 64.77 -74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 133.35 -74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 133.35 -74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C576517"
-			(at 67.31 -74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "46486b50-22c8-413c-abdc-5df89e5d7ee7")
-		)
-		(pin "2"
-			(uuid "7c182894-05a6-4346-8f1d-a80685b1c911")
-		)
-		(instances
-			(project "SiPDrive"
-				(path "/1bd0e062-70ad-400b-840c-d90635802637"
-					(reference "C25")
 					(unit 1)
 				)
 			)
@@ -18077,6 +17400,147 @@
 			(project "SiPDrive"
 				(path "/1bd0e062-70ad-400b-840c-d90635802637"
 					(reference "#PWR055")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 297.18 213.36 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "bd607770-0f2a-40b8-b93d-3c28e86aca82")
+		(property "Reference" "R19"
+			(at 300.736 212.598 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1mR"
+			(at 300.736 214.376 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 298.958 213.36 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 297.18 213.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 297.18 213.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C20160272"
+			(at 297.18 213.36 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "2235f562-f24b-4426-8b63-92c233cbc356")
+		)
+		(pin "1"
+			(uuid "c880dfcb-603b-41bf-83d1-2f4736188b47")
+		)
+		(instances
+			(project "SiPDrive"
+				(path "/1bd0e062-70ad-400b-840c-d90635802637"
+					(reference "R19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 179.07 93.98 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "bfa312cf-22d0-4295-9c89-8e462c2e483b")
+		(property "Reference" "#PWR057"
+			(at 179.07 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 179.07 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 179.07 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 179.07 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 179.07 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f4cb574f-27db-457c-9b0e-3e9377d67165")
+		)
+		(instances
+			(project "SiPDrive"
+				(path "/1bd0e062-70ad-400b-840c-d90635802637"
+					(reference "#PWR057")
 					(unit 1)
 				)
 			)
@@ -18345,7 +17809,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C138031"
+		(property "LCSC" "C25867"
 			(at 288.29 154.94 90)
 			(effects
 				(font
@@ -18579,7 +18043,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C138031"
+		(property "LCSC" "C25867"
 			(at 288.29 147.32 90)
 			(effects
 				(font
@@ -18966,53 +18430,56 @@
 		)
 	)
 	(symbol
-		(lib_id "SiPDrive:HOSRX1206-3W-1MR-1%")
-		(at 297.18 149.86 90)
+		(lib_id "Transistor_FET:BS108")
+		(at 294.64 116.84 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "d4766e54-96ee-4cbd-9b79-32a485904839")
-		(property "Reference" "R20"
-			(at 299.72 148.5899 90)
+		(uuid "d286f8ef-b212-4d1f-97e9-e3d8be79e204")
+		(property "Reference" "Q3"
+			(at 300.99 115.5699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
-		(property "Value" "HOSRX"
-			(at 299.72 151.1299 90)
+		(property "Value" "SP40N03GNJ"
+			(at 300.99 118.1099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
-		(property "Footprint" "SiPDrive:RES-SMD_L3.2-W1.6_SR120620F0M50SZ"
-			(at 304.8 149.86 0)
+		(property "Footprint" "SiPDrive:POWERPAK-1212-8_L3.0-W3.0-P0.65-LS3.3-BL"
+			(at 299.72 118.745 0)
 			(effects
 				(font
 					(size 1.27 1.27)
+					(italic yes)
 				)
+				(justify left)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
-			(at 297.18 149.86 0)
+			(at 299.72 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 				(hide yes)
 			)
 		)
 		(property "Description" ""
-			(at 297.18 149.86 0)
+			(at 294.64 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19020,8 +18487,8 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" "C18724164"
-			(at 307.34 149.86 0)
+		(property "LCSC" "C22466709"
+			(at 294.64 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19029,16 +18496,19 @@
 				(hide yes)
 			)
 		)
-		(pin "2"
-			(uuid "cef4d7ad-a456-43c1-a21f-68b854c87f14")
+		(pin "3"
+			(uuid "afc2a780-8d5b-47cb-a09a-86fe6faed417")
 		)
 		(pin "1"
-			(uuid "85993983-a4c9-4fb7-b5b0-50bb0708705f")
+			(uuid "1d4a97c6-538c-41c1-b175-540b78fc421f")
+		)
+		(pin "2"
+			(uuid "c602b1d5-7f5b-4da8-b1bc-0f4e071153f2")
 		)
 		(instances
 			(project "SiPDrive"
 				(path "/1bd0e062-70ad-400b-840c-d90635802637"
-					(reference "R20")
+					(reference "Q3")
 					(unit 1)
 				)
 			)
@@ -19250,6 +18720,84 @@
 			(project "SiPDrive"
 				(path "/1bd0e062-70ad-400b-840c-d90635802637"
 					(reference "C7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 308.61 171.45 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d82b95b4-6364-4008-bc9f-3fecf023da1d")
+		(property "Reference" "C29"
+			(at 310.642 167.386 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1uF"
+			(at 310.642 164.846 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 312.42 170.4848 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 308.61 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 308.61 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C1518208"
+			(at 308.61 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "eda85165-16d0-4c21-b158-cc396a04d743")
+		)
+		(pin "2"
+			(uuid "2eb00d8b-e4a2-4ede-928d-04f743b57166")
+		)
+		(instances
+			(project "SiPDrive"
+				(path "/1bd0e062-70ad-400b-840c-d90635802637"
+					(reference "C29")
 					(unit 1)
 				)
 			)
@@ -19538,7 +19086,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "CMSA015N06"
+		(property "Value" "SP40N03GNJ"
 			(at 300.99 55.8799 0)
 			(effects
 				(font
@@ -19547,7 +19095,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "SiPDrive:PDFN-8_L5.8-W5.0-P1.27-LS6.1-BL"
+		(property "Footprint" "SiPDrive:POWERPAK-1212-8_L3.0-W3.0-P0.65-LS3.3-BL"
 			(at 299.72 56.515 0)
 			(effects
 				(font
@@ -19577,7 +19125,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C42428219"
+		(property "LCSC" "C22466709"
 			(at 294.64 54.61 0)
 			(effects
 				(font
@@ -19831,6 +19379,91 @@
 			(project "SiPDrive"
 				(path "/1bd0e062-70ad-400b-840c-d90635802637"
 					(reference "#PWR011")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_FET:BS108")
+		(at 294.64 201.93 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e4536f88-f8cc-4f6a-bd3a-8a104c42e0fb")
+		(property "Reference" "Q6"
+			(at 300.99 200.6599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SP40N03GNJ"
+			(at 300.99 203.1999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "SiPDrive:POWERPAK-1212-8_L3.0-W3.0-P0.65-LS3.3-BL"
+			(at 299.72 203.835 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 299.72 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 294.64 201.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C22466709"
+			(at 294.64 201.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "7f1f807f-b5ef-4005-858e-61ee69885056")
+		)
+		(pin "1"
+			(uuid "0464873b-da62-4326-8dd3-21e39bc05024")
+		)
+		(pin "2"
+			(uuid "061675fd-5e8e-4e9e-916b-cb37dc15f379")
+		)
+		(instances
+			(project "SiPDrive"
+				(path "/1bd0e062-70ad-400b-840c-d90635802637"
+					(reference "Q6")
 					(unit 1)
 				)
 			)
@@ -20469,6 +20102,82 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 297.18 88.9 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ed4417ec-0e8e-4b03-b9ac-ef62e53c5cbb")
+		(property "Reference" "R20"
+			(at 300.736 88.138 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1mR"
+			(at 300.736 89.916 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 298.958 88.9 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 297.18 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 297.18 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C20160272"
+			(at 297.18 88.9 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "3a7d5c96-a5e4-416c-a96b-3412eeaa6688")
+		)
+		(pin "1"
+			(uuid "23f2a120-8ac4-4609-a8e3-8597e91d288b")
+		)
+		(instances
+			(project "SiPDrive"
+				(path "/1bd0e062-70ad-400b-840c-d90635802637"
+					(reference "R20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5V")
 		(at 148.59 189.23 0)
 		(unit 1)
@@ -20819,7 +20528,7 @@
 		(dnp no)
 		(uuid "f7b24ce6-ee3f-4136-a5d3-b36fd815e10f")
 		(property "Reference" "C27"
-			(at 311.15 43.18 90)
+			(at 310.642 44.196 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20827,8 +20536,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "220n"
-			(at 311.15 40.64 90)
+		(property "Value" "1uF"
+			(at 310.642 41.656 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20836,7 +20545,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 312.42 47.2948 0)
 			(effects
 				(font
@@ -20863,7 +20572,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C162178"
+		(property "LCSC" "C1518208"
 			(at 308.61 48.26 0)
 			(effects
 				(font
@@ -21135,7 +20844,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C138031"
+		(property "LCSC" "C25756"
 			(at 254 99.06 90)
 			(effects
 				(font

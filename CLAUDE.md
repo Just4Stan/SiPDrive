@@ -8,7 +8,7 @@ Key sections for development context:
 - **CAN-FD Protocol**: command and telemetry frame formats
 - **Configuration**: compile-time (`config.h`) and persistent (flash) parameters
 - **Build System Details**: toolchain, dependencies, memory layout, known issues
-- **Schematic Audit**: current hardware status and required fixes
+- **Schematic Audit**: hardware validation status (schematic ready for PCB)
 - **Roadmap**: prioritized feature plan (P0-P2)
 - **Code Style**: naming conventions, C++17, namespace structure
 

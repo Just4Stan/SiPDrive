@@ -89,9 +89,9 @@ constexpr int32_t kAdcSampleOffsetTicks =
     static_cast<int32_t>(SIPDRIVE_ADC_SAMPLE_OFFSET_TICKS);
 
 constexpr float kBusVoltageV = 24.0f;
-constexpr float kShuntOhm = 0.005f;
-constexpr float kOpampGain = 16.0f;
-constexpr uint8_t kOpampPgaGainBits = 0x04U;
+constexpr float kShuntOhm = 0.001f;           // HOSRX1206-3W-1MR-1% (1 milliohm).
+constexpr float kOpampGain = 10.0f;            // Differential: Rf/Rin = 15k/1.5k.
+constexpr uint8_t kOpampPgaGainBits = 0x04U;   // Unused in standalone OPAMP mode.
 constexpr float kAdcReferenceV = 3.3f;
 constexpr uint16_t kAdcFullScale = 4095U;
 constexpr uint32_t kCurrentOffsetSamples = 1024U;
@@ -111,7 +111,7 @@ constexpr uint32_t kAdcRegularSampleTimeBits = 6U;   // 247.5 ADC cycles.
 constexpr uint8_t kAdcVbatChannel = 6U;              // PC0 -> ADC12_IN6 (ADC1 regular).
 constexpr uint8_t kAdcBoardNtcChannel = 7U;          // PC1 -> ADC12_IN7.
 constexpr uint8_t kAdcStatorNtcChannel = 8U;         // PC2 -> ADC12_IN8.
-constexpr float kVbatDividerGain = 21.0f;            // 200k/10k divider -> (Rtop + Rbot) / Rbot.
+constexpr float kVbatDividerGain = 11.0f;            // 100k/10k divider -> (Rtop + Rbot) / Rbot.
 
 // Placeholder pending MT6701 ABI configuration and timer x4 decode selection.
 constexpr uint32_t kEncoderCountsPerRev = static_cast<uint32_t>(SIPDRIVE_ENCODER_CPR);

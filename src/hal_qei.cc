@@ -17,7 +17,13 @@ namespace {
 
 constexpr float kPi = 3.14159265359f;
 constexpr float kTwoPi = 6.283185307179586f;
-constexpr uint8_t kTim4Af = 2U;
+// TIM4 alternate-function mapping (STM32G431 datasheet Table 13):
+//   PB7 -> TIM4_CH2 = AF2
+//   PB6 -> TIM4_CH1 = AF3  (NOT AF2 — AF2 is undefined on PB6)
+// PB6/PB7 have NO SPI alternate functions, so SSI mode uses
+// bit-banged GPIO (adequate at 170 MHz for MT6701's 14-bit frame).
+constexpr uint8_t kTim4Ch2Af = 2U;   // PB7 -> TIM4_CH2.
+constexpr uint8_t kTim4Ch1Af = 3U;   // PB6 -> TIM4_CH1.
 
 // MT6701 QFN-16 signal mapping used in this project.
 constexpr uint8_t kMt6701DoPin = 7U;    // U2 pin6: A/DO  -> PB7
@@ -78,9 +84,12 @@ void InitIndexExti() {
 }
 
 void InitAbzInterface() {
-  // PB7 -> TIM4_CH1 (ENC_A), PB6 -> TIM4_CH2 (ENC_B), PB4 -> ENC_Z EXTI4.
-  gpio::ConfigureAlternate(GPIOB, 7U, kTim4Af, gpio::Pull::kUp);
-  gpio::ConfigureAlternate(GPIOB, 6U, kTim4Af, gpio::Pull::kUp);
+  // PB7 -> TIM4_CH2 AF2 (MT6701 A), PB6 -> TIM4_CH1 AF3 (MT6701 B),
+  // PB4 -> Z index (EXTI4).
+  // MT6701 A/B are swapped relative to TIM4 CH1/CH2, reversing the
+  // count direction.  Calibration handles the resulting sign.
+  gpio::ConfigureAlternate(GPIOB, 7U, kTim4Ch2Af, gpio::Pull::kUp);
+  gpio::ConfigureAlternate(GPIOB, 6U, kTim4Ch1Af, gpio::Pull::kUp);
   gpio::ConfigureInput(GPIOB, 4U, gpio::Pull::kUp);
 
   RCC->APB1ENR1 |= RCC_APB1ENR1_TIM4EN;

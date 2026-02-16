@@ -16,7 +16,7 @@ SiPDrive is an open-source motor controller built around the STSPIN32G4 System-i
 - 40 kHz FOC current loop with hardware CORDIC acceleration
 - CAN-FD command/telemetry (1 Mbps nominal, 5 Mbps data)
 - Current and position control modes
-- 14-bit magnetic encoder (MT6701 ABZ + PWM capture)
+- 14-bit magnetic encoder (MT6701 SSI/ABZ selectable via solder jumper)
 - On-device encoder calibration with 128-entry compensation table
 - Persistent configuration in flash (CRC32 protected)
 - Thermal derating and fault protection (board + stator NTC)
@@ -90,12 +90,12 @@ SiPDrive/
 - STM32G431CBU6 (Cortex-M4F @ 170 MHz)
 - Integrated 3-phase gate driver
 - Buck converter for MCU power
-- 2x operational amplifiers for current sensing
+- 3x operational amplifiers for current sensing
 - Memory: 128 KB Flash, 22 KB SRAM + 10 KB CCM RAM
 
 **MT6701 (U2)** - 14-bit magnetic angle sensor
-- SSI/ABZ/UVW output modes
-- I2C configuration interface
+- SSI (default, MODE=HIGH) or ABZ mode (JP1 solder jumper to GND)
+- PB7=DO/A, PB6=CLK/B, PB4=CSN/Z
 
 **TCAN1057A (U3)** - CAN-FD transceiver (up to 5 Mbps)
 
@@ -103,22 +103,29 @@ SiPDrive/
 
 | Peripheral | Function | Pins |
 |---|---|---|
-| TIM1 | 3-phase PWM (complementary) | CH1/1N, CH2/2N, CH3/3N |
-| TIM3 | MT6701 PWM capture | PB5 (CH2) |
-| TIM4 | QEI encoder | PB7=A, PB6=B, PB4=Z |
-| ADC1 | OPAMP1 current (Ia) | IN13 (injected) |
-| ADC2 | OPAMP2 current (Ib) | IN16 (injected) |
-| ADC1/2 | Vbus, board NTC, stator NTC | PC0, PC1, PC2 |
-| FDCAN1 | CAN-FD | PA11=RX, PA12=TX |
-| I2C3 | STSPIN32G4 gate driver config | - |
+| TIM1 | 3-phase PWM (internal to STSPIN32G4 gate driver) | GHS/GLS via 20R gate resistors |
+| TIM4 | QEI encoder (ABZ mode) or SPI (SSI mode) | PB7=DO/A, PB6=CLK/B, PB4=CSN/Z |
+| OPAMP1 | Phase U current (Ia) | PA1(+), PA3(-), PA2(out) |
+| OPAMP2 | Phase W current (Ic) | PA7(+), PC5(-), PA6(out) |
+| OPAMP3 | Phase V current (Ib) | PB0(+), PB2(-), PB1(out) |
+| ADC1/2 | Vbus, board NTC, stator NTC | PC0 (IN6), PC1 (IN7), PC2 (IN8) |
+| FDCAN1 | CAN-FD | PA11=RX, PA12=TX, PA10=TCAN standby |
+| I2C3 | STSPIN32G4 gate driver config | Internal SiP bus (no external pins) |
 | CORDIC | Hardware sin/cos | - |
+
+### Current Sensing
+
+3-shunt topology with biased differential OPAMPs (EVL reference design):
+- **Shunts**: 3x 1 mR (HOSRX1206, 3W) on low-side MOSFET sources
+- **OPAMP gain**: 10x (Rf=15k / Rin=1.5k), mid-rail bias via 30k/30k divider on OPAMP+ nodes
+- **MOSFETs**: 6x CMSA015N06 with 20R gate resistors
 
 ### Hardware Constraints
 
-- **2 ADC channels** for current sensing (Ic = -(Ia + Ib))
 - **128 KB Flash** total - code size must be minimized
-- **No hardware overcurrent protection** - software only
-- **MT6701 MODE pin** is strap-controlled (not MCU-driven)
+- **SCREF overcurrent**: 0.30V threshold via 100k/10k divider (~300A trip with 1 mR shunts)
+- **MT6701 MODE**: R6 10k pullup = SSI default, JP1 jumper to GND for ABZ mode
+- **Stator NTC (R14)**: DNP solder pad for external thermistor
 
 ### KiCad Project
 
@@ -197,7 +204,7 @@ All hardware access is through `hal_*` modules. When modifying HAL code, ensure 
 
 Implementation in `foc_core.cc`:
 
-**Clarke Transform** (2-phase measurement):
+**Clarke Transform** (3-shunt, using Ia and Ib; Ic available for validation):
 ```
 i_alpha = ia
 i_beta  = (ia + 2*ib) / sqrt(3)
@@ -403,8 +410,8 @@ hw/SiPDrive/datasheets/rm0440-stm32g4-series-advanced-armbased-32bit-mcus-stmicr
 
 - [ ] Motor pole pairs match `config.h` (`kMotorPolePairs = 7`)
 - [ ] Encoder CPR correct (`kEncoderCountsPerRev = 16384`)
-- [ ] Shunt value correct (`kShuntOhm = 0.005`)
-- [ ] OPAMP gain matches hardware (`kOpampGain = 16.0`)
+- [ ] Shunt value correct (`kShuntOhm = 0.001`)
+- [ ] OPAMP gain matches hardware (`kOpampGain = 10.0`)
 - [ ] Current limits set appropriately
 - [ ] Bus voltage safe (`kBusVoltageV = 24.0f`)
 - [ ] Thermal limits reviewed
@@ -450,16 +457,15 @@ hw/SiPDrive/datasheets/rm0440-stm32g4-series-advanced-armbased-32bit-mcus-stmicr
 
 Validated against STSPIN32G4, EVLSPIN32G4-ACT, MT6701, and TCAN1057A datasheets.
 
-**Verdict**: Not order-ready. One critical wiring error remains.
+**Verdict**: Schematic is ready for PCB layout.
 
-### Critical: Bias Resistors Misplaced
+### Current Sensing (validated)
 
-The 3-shunt bias resistors (R25/R26, R30/R31, R35/R36) are connected to the shunt nodes instead of the OPAMP + input nodes. Per the EVL/ST reference topology, the 30k bias pairs (to VREF+ and GND) must be on:
-- OP1: PA1
-- OP2: PA7
-- OP3: PB0
-
-**Impact**: Current channels are not mid-biased. ADC range/linearity for bidirectional sensing is incorrect.
+3-shunt biased differential topology matching EVLSPIN32G4-ACT reference:
+- 30k/30k bias dividers on OPAMP+ nodes (PA1, PA7, PB0) - provides 1.65V mid-rail DC bias
+- 1.5k input resistors from shunt nodes to OPAMP+ inputs
+- 15k/1.5k feedback gives 10x differential gain
+- 1 mR shunts (HOSRX1206-3W) for 40A+ phase current range
 
 ### SCREF Divider (valid)
 
@@ -481,17 +487,10 @@ R10=100k / R9=10k gives gain 11. At 25.2 V max: Vadc = 2.29 V (within 3.3 V rang
 | U1 PA11 <- U3 RXD (CAN) | Pass |
 | U1 PA10 -> U3 S (CAN mode) | Pass |
 
-### Firmware/Schematic Mismatches
+### Remaining Items
 
-1. `kVbatDividerGain` in `config.h` still set to 21.0 - hardware is now gain 11
-2. `hal_qei.cc` assumes PB5-driven MODE - hardware uses strap-only
-
-### Required Edits Before Board Order
-
-1. Move bias resistors to OPAMP + nodes (PA1, PA7, PB0)
-2. Update `kVbatDividerGain = 11.0f` in firmware
-3. Align MT6701 MODE handling with strap-only hardware
-4. Clean KiCad ERC (130 violations, 15 errors - mostly PWR_FLAG and unused pins)
+1. Clean KiCad ERC warnings (PWR_FLAG hygiene, unused pin markers)
+2. Consider adding dedicated VREF+ filtering (ferrite + cap) for improved ADC accuracy in production
 
 </details>
 
@@ -504,11 +503,11 @@ SiPDrive is inspired by [mjbots moteus](https://github.com/mjbots/moteus) but op
 |---|---|---|
 | MCU | STM32G474 (512K Flash, 128K RAM) | STM32G431 (128K Flash, 32K RAM) |
 | Gate Driver | DRV8323 (external) | STSPIN32G4 (integrated SiP) |
-| Current Sensing | 3-phase | 2-phase (Ia, Ib) |
+| Current Sensing | 3-phase | 3-phase (3x 1 mR shunts, 10x OPAMP) |
 | Build System | Bazel + mbed-os | CMake + bare-metal |
 | Control Rate | 30 kHz | 40 kHz |
 | Communication | CAN-FD + RS485 | CAN-FD only |
-| Encoder | AS5047P (SPI) | MT6701 (ABZ + PWM) |
+| Encoder | AS5047P (SPI) | MT6701 (SSI/ABZ, jumper selectable) |
 | Form Factor | Standalone PCB | Compact (motor-mounted) |
 | Maturity | Production | Alpha (untested) |
 | Binary Size | ~100 KB+ | 11 KB |
@@ -521,7 +520,7 @@ SiPDrive is intentionally minimal (~3.7k LOC vs ~21.7k LOC). Key differences:
 
 **Protocol**: Fixed CAN frames. Missing: register-based protocol, multiplex server, dynamic config.
 
-**Sensing**: Single encoder path (QEI + PWM). Missing: multi-source position pipeline, AUX port support.
+**Sensing**: MT6701 SSI/ABZ via jumper. Missing: multi-source position pipeline, AUX port support.
 
 **Safety**: Basic fault flags + thermal. Missing: structured fault codes, timing violation detection, command timeout.
 
@@ -558,7 +557,7 @@ SiPDrive is intentionally minimal (~3.7k LOC vs ~21.7k LOC). Key differences:
 
 ### Known Limitations
 
-- 2-phase current sensing limits fault detection
+- Firmware currently uses only 2 of 3 OPAMP channels (3rd available for validation)
 - No hardware overcurrent protection
 - PWM frequency not runtime-configurable
 - No FOC decoupling (back-EMF, cross-coupling feedforward)
