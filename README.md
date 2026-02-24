@@ -1,4 +1,4 @@
-# SiPDrive
+# SiPDrive (Work In Progress, Status: Need to order first hardware)
 
 **Compact Field-Oriented Control (FOC) firmware and hardware for QDD actuators**
 
