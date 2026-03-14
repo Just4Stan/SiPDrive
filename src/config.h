@@ -89,7 +89,7 @@ constexpr int32_t kAdcSampleOffsetTicks =
     static_cast<int32_t>(SIPDRIVE_ADC_SAMPLE_OFFSET_TICKS);
 
 constexpr float kBusVoltageV = 24.0f;
-constexpr float kShuntOhm = 0.001f;           // HOSRX1206-3W-1MR-1% (1 milliohm).
+constexpr float kShuntOhm = 0.002f;           // SME08A1FR002T (2 milliohm).
 constexpr float kOpampGain = 10.0f;            // Differential: Rf/Rin = 15k/1.5k.
 constexpr uint8_t kOpampPgaGainBits = 0x04U;   // Unused in standalone OPAMP mode.
 constexpr float kAdcReferenceV = 3.3f;
