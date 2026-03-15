@@ -498,6 +498,16 @@
         "via_diameter": 0.45,
         "via_drill": 0.3,
         "wire_width": 6
+      },
+      {
+        "bus_width": 24,
+        "line_style": 0,
+        "name": "50Ohm",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.154,
+        "wire_width": 12
       }
     ],
     "meta": {
@@ -521,10 +531,6 @@
       {
         "netclass": "50Ohm",
         "pattern": "/ELRS/ELRS_ANT"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "/ELRS/ANT_TRACE"
       }
     ]
   },

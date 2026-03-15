@@ -91,7 +91,7 @@ constexpr int32_t kAdcSampleOffsetTicks =
 constexpr float kBusVoltageV = 24.0f;
 constexpr float kShuntOhm = 0.002f;           // SME08A1FR002T (2 milliohm).
 constexpr float kOpampGain = 10.0f;            // Differential: Rf/Rin = 15k/1.5k.
-constexpr uint8_t kOpampPgaGainBits = 0x04U;   // Unused in standalone OPAMP mode.
+constexpr uint8_t kOpampPgaGainBits = 0x04U;   // Not used: OPAMPs run in standalone mode.
 constexpr float kAdcReferenceV = 3.3f;
 constexpr uint16_t kAdcFullScale = 4095U;
 constexpr uint32_t kCurrentOffsetSamples = 1024U;

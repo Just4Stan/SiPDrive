@@ -5,8 +5,9 @@
 namespace sipdrive::thermal {
 namespace {
 
-// 10k NTC B3950 lookup table: voltage (3.3V supply, 10k pullup to 3.3V) to
-// temperature.  V = 3.3 * Rntc / (Rntc + 10k).
+// NCP15XH103F03RC 10k NTC (B=3380K) lookup table.
+// Circuit: NTC to GND, 3.3k pullup to 3.3V.
+// V = 3.3 * Rntc / (Rntc + 3300).
 // Piecewise linear interpolation between these points.
 struct VtEntry {
   float voltage;
@@ -14,13 +15,13 @@ struct VtEntry {
 };
 
 constexpr VtEntry kNtcTable[] = {
-    {2.81f, 0.0f},    // ~32.7k
+    {2.95f, 0.0f},    // ~28.2k
     {2.48f, 25.0f},   // 10k
-    {1.95f, 50.0f},   // ~4.16k
-    {1.39f, 75.0f},   // ~1.73k
-    {0.92f, 100.0f},  // ~0.84k
-    {0.58f, 125.0f},  // ~0.44k
-    {0.36f, 150.0f},  // ~0.24k
+    {1.84f, 50.0f},   // ~4.16k
+    {1.23f, 75.0f},   // ~1.96k
+    {0.78f, 100.0f},  // ~1.02k
+    {0.49f, 125.0f},  // ~580
+    {0.32f, 150.0f},  // ~351
 };
 constexpr uint32_t kNtcTableSize =
     sizeof(kNtcTable) / sizeof(kNtcTable[0]);

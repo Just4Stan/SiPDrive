@@ -110,12 +110,12 @@ void SetTriggerMode(InjectedTriggerMode mode) {
   g_trigger_mode = mode;
 }
 
-void ConfigureOpampPga(OPAMP_TypeDef* opamp) {
-  // VMSEL=10 selects PGA mode (VMSEL=11 would be follower, ignoring gain).
+void ConfigureOpampStandalone(OPAMP_TypeDef* opamp) {
+  // VMSEL=00: standalone mode, VINM0 connected to inverting input.
+  // Gain set by external resistor network: Rf/Rin = 15k/1.5k = 10.
+  // OPAMPINTEN routes output internally to ADC (no external pin needed).
   opamp->CSR =
       OPAMP_CSR_OPAMPINTEN |
-      OPAMP_CSR_VMSEL_1 |
-      (static_cast<uint32_t>(config::kOpampPgaGainBits) << OPAMP_CSR_PGGAIN_Pos) |
       OPAMP_CSR_HIGHSPEEDEN |
       OPAMP_CSR_OPAMPxEN;
 }
@@ -208,8 +208,8 @@ void Init() {
   ADC12_COMMON->CCR = (ADC12_COMMON->CCR & ~ADC_CCR_CKMODE) |
                       (ADC_CCR_CKMODE_0 | ADC_CCR_CKMODE_1);
 
-  ConfigureOpampPga(OPAMP1);
-  ConfigureOpampPga(OPAMP2);
+  ConfigureOpampStandalone(OPAMP1);
+  ConfigureOpampStandalone(OPAMP2);
 
   const bool injected_channels_valid =
       IsValidChannel(config::kAdcIaInjectedChannel) &&

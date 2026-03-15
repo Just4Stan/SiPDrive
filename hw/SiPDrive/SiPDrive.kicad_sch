@@ -390,6 +390,42 @@
 
 (rectangle (start -2.54 5.08) (end 7.62 -5.08) (stroke (width 0) (type default)) (fill (type background))) (circle (center -1.27 3.81) (radius 0.38) (stroke (width 0) (type default)) (fill (type none))) (pin unspecified line (at -5.08 2.54 0) (length 2.54) (name "1" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))) (pin unspecified line (at -5.08 0 0) (length 2.54) (name "2" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27))))) (pin unspecified line (at -5.08 -2.54 0) (length 2.54) (name "3" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27))))) (pin unspecified line (at 5.08 7.62 270) (length 2.54) (name "5" (effects (font (size 1.27 1.27)))) (number "5" (effects (font (size 1.27 1.27))))) (pin unspecified line (at 5.08 -7.62 90) (length 2.54) (name "4" (effects (font (size 1.27 1.27)))) (number "4" (effects (font (size 1.27 1.27)))))) (embedded_fonts no)) 
 
+(symbol "SiPDrive:SMBJ26A_C908802" (exclude_from_sim no) (in_bom yes) (on_board yes) 
+
+(property "Reference" "D" (at 0 5.08 0) (effects (font (size 1.27 1.27)))) 
+
+(property "Value" "SMBJ26A_C908802" (at 0 -5.08 0) (effects (font (size 1.27 1.27)))) 
+
+(property "Footprint" "SiPDrive:SMB_L4.5-W3.7-LS5.4-RD" (at 0 -7.62 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+
+(property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+
+(property "Description" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+
+(property "LCSC Part" "C908802" (at 0 -10.16 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+
+(symbol "SMBJ26A_C908802_0_1" 
+
+(polyline (pts 
+
+(xy -1.78 1.78) 
+
+(xy -1.27 1.27) 
+
+(xy -1.27 -1.27) 
+
+(xy -0.76 -1.78)) (stroke (width 0) (type default)) (fill (type none))) 
+
+(polyline (pts 
+
+(xy 1.27 1.78) 
+
+(xy -1.27 0) 
+
+(xy 1.27 -1.78) 
+
+(xy 1.27 1.78)) (stroke (width 0) (type default)) (fill (type background))) (pin unspecified line (at -3.81 0 0) (length 5.08) (name "1" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))) (pin unspecified line (at 3.81 0 180) (length 5.08) (name "2" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))) (embedded_fonts no)) 
+
 (symbol "SiPDrive:SME08A1FR002T" (exclude_from_sim no) (in_bom yes) (on_board yes) 
 
 (property "Reference" "R" (at 0 5.08 0) (effects (font (size 1.27 1.27)))) 
@@ -872,6 +908,8 @@
 
 (junction (at 297.18 194.31) (diameter 0) (color 0 0 0 0) (uuid "d0f98e0e-3a64-4846-af16-e51721cd0f0e")) 
 
+(junction (at 67.31 21.59) (diameter 0) (color 0 0 0 0) (uuid "d1adc00f-d35b-4bda-a238-40fe753dc18a")) 
+
 (junction (at 279.4 85.09) (diameter 0) (color 0 0 0 0) (uuid "d481dddb-3d24-499a-979d-9eac73349574")) 
 
 (junction (at 121.92 156.21) (diameter 0) (color 0 0 0 0) (uuid "d9a29c5b-c583-458c-84f5-a4bce40b7a13")) 
@@ -1194,6 +1232,12 @@
 
 (wire (pts 
 
+(xy 67.31 21.59) 
+
+(xy 67.31 22.86)) (stroke (width 0) (type default)) (uuid "511d6094-02c8-4183-bf1d-e65d54cd699f")) 
+
+(wire (pts 
+
 (xy 317.5 48.26) 
 
 (xy 312.42 48.26)) (stroke (width 0) (type default)) (uuid "51a74f79-8e3e-41dc-b5b5-cfae733fa3b3")) 
@@ -1203,6 +1247,12 @@
 (xy 144.78 54.61) 
 
 (xy 170.18 54.61)) (stroke (width 0) (type default)) (uuid "533a724a-6c3f-45c2-a719-9fceb57090ec")) 
+
+(wire (pts 
+
+(xy 67.31 30.48) 
+
+(xy 67.31 31.75)) (stroke (width 0) (type default)) (uuid "54fb5365-d160-4eb5-9287-fba96a11fdd7")) 
 
 (wire (pts 
 
@@ -5760,6 +5810,20 @@
 
 (property "Description" "Power symbol creates a global label with name \"GND\" , ground" (at 243.84 30.48 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "58425e9a-aeb9-436c-9bfe-865d3bc96456")) (instances (project "SiPDrive" (path "/1bd0e062-70ad-400b-840c-d90635802637" (reference "#PWR038") (unit 1))))) 
 
+(symbol (lib_id "SiPDrive:SMBJ26A_C908802") (at 67.31 26.67 270) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced yes) (uuid "66543a9a-84b7-4206-8b1c-88bec794861b") 
+
+(property "Reference" "D3" (at 69.85 25.1449 90) (effects (font (size 1.27 1.27)) (justify left))) 
+
+(property "Value" "SMBJ26A_C908802" (at 69.85 27.6849 90) (effects (font (size 1.27 1.27)) (justify left))) 
+
+(property "Footprint" "SiPDrive:SMB_L4.5-W3.7-LS5.4-RD" (at 59.69 26.67 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+
+(property "Datasheet" "" (at 67.31 26.67 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+
+(property "Description" "" (at 67.31 26.67 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+
+(property "LCSC Part" "C908802" (at 57.15 26.67 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "7ea9b390-bfa3-453d-ad51-c97974605811")) (pin "2" (uuid "a76463b1-b1df-4627-9e33-520dddabb4e0")) (instances (project "" (path "/1bd0e062-70ad-400b-840c-d90635802637" (reference "D3") (unit 1))))) 
+
 (symbol (lib_id "Device:C") (at 45.72 270.51 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced yes) (uuid "6716c096-8912-472d-9ce9-efd543e804e1") 
 
 (property "Reference" "C13" (at 49.53 269.2399 0) (effects (font (size 1.27 1.27)) (justify left))) 
@@ -6544,13 +6608,13 @@
 
 (property "Value" "220n" (at 161.29 106.6799 0) (effects (font (size 1.27 1.27)) (justify left))) 
 
-(property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 158.4452 109.22 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+(property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (at 158.4452 109.22 0) (effects (font (size 1.27 1.27)) (hide yes))) 
 
 (property "Datasheet" "~" (at 157.48 105.41 0) (effects (font (size 1.27 1.27)) (hide yes))) 
 
 (property "Description" "Unpolarized capacitor" (at 157.48 105.41 0) (effects (font (size 1.27 1.27)) (hide yes))) 
 
-(property "LCSC" "C21120" (at 157.48 105.41 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "42252e3e-feb1-454c-8345-bd112c933b3d")) (pin "2" (uuid "babd7116-ad3a-417f-95b5-f115b6dae32e")) (instances (project "SiPDrive" (path "/1bd0e062-70ad-400b-840c-d90635802637" (reference "C7") (unit 1))))) 
+(property "LCSC" "C49333232" (at 157.48 105.41 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "42252e3e-feb1-454c-8345-bd112c933b3d")) (pin "2" (uuid "babd7116-ad3a-417f-95b5-f115b6dae32e")) (instances (project "SiPDrive" (path "/1bd0e062-70ad-400b-840c-d90635802637" (reference "C7") (unit 1))))) 
 
 (symbol (lib_id "Device:C") (at 308.61 171.45 90) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "d82b95b4-6364-4008-bc9f-3fecf023da1d") 
 
