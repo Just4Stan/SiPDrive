@@ -29680,15 +29680,6 @@
       ]
     },
     {
-      "net": "+5V",
-      "message": "Power rail '+5V' has power_in pins but no power_out or PWR_FLAG \u2014 ERC will flag this",
-      "pin_types": [
-        "passive",
-        "power_in",
-        "unspecified"
-      ]
-    },
-    {
       "net": "+3.3V",
       "message": "Power rail '+3.3V' has power_in pins but no power_out or PWR_FLAG \u2014 ERC will flag this",
       "pin_types": [
@@ -29700,6 +29691,15 @@
     {
       "net": "+12V",
       "message": "Power rail '+12V' has power_in pins but no power_out or PWR_FLAG \u2014 ERC will flag this",
+      "pin_types": [
+        "passive",
+        "power_in",
+        "unspecified"
+      ]
+    },
+    {
+      "net": "+5V",
+      "message": "Power rail '+5V' has power_in pins but no power_out or PWR_FLAG \u2014 ERC will flag this",
       "pin_types": [
         "passive",
         "power_in",

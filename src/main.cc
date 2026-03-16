@@ -259,6 +259,11 @@ void ControlLoopIsr() {
 
   sipdrive::hal::qei::Sample(sipdrive::config::kControlPeriodSec);
 
+  // Skip FOC when calibration is driving the motor open-loop from main loop.
+  if (sipdrive::calibration::IsActive()) {
+    return;
+  }
+
   sipdrive::hal::adc_opamp::CurrentSample sample;
   if (!sipdrive::hal::adc_opamp::ReadInjected(&sample)) {
     return;

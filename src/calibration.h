@@ -32,4 +32,8 @@ State Update(float* duty_a, float* duty_b, float* duty_c);
 // Get the result after state reaches kDone.
 const CalibrationResult& GetResult();
 
+// Returns true when calibration is actively driving the motor (kForward/kReverse).
+// Safe to call from ISR context.
+bool IsActive();
+
 }  // namespace sipdrive::calibration

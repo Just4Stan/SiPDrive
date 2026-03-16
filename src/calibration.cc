@@ -182,4 +182,8 @@ const CalibrationResult& GetResult() {
   return g_result;
 }
 
+bool IsActive() {
+  return (g_state == State::kForward || g_state == State::kReverse);
+}
+
 }  // namespace sipdrive::calibration

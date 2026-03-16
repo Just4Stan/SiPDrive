@@ -1,13 +1,18 @@
-# SiPDrive (Work In Progress, Status: Need to order first hardware)
+# SiPDrive (Work In Progress, Status: Ordering first hardware)
 
 **Compact Field-Oriented Control (FOC) firmware and hardware for QDD actuators**
 
 SiPDrive is an open-source motor controller built around the STSPIN32G4 System-in-Package, MT6701 magnetic encoder, and CAN-FD communication. It targets compact quasi-direct-drive (QDD) actuator applications with torque, position, and speed control.
 
+<p align="center">
+  <img src="images/pcb_front.png" width="400" alt="SiPDrive PCB front">
+  <img src="images/pcb_back.png" width="400" alt="SiPDrive PCB back">
+</p>
+
 | | Status |
 |---|---|
 | **Build** | Compiles (macOS ARM GCC 15.2.0) |
-| **Hardware** | Untested on target |
+| **Hardware** | PCB designed, ordering assembled from JLCPCB |
 | **Firmware** | ~3,100 LOC, 11 KB Flash (8.4%), 13 KB RAM (59%) |
 | **License** | CC BY-NC 4.0 |
 
@@ -116,14 +121,14 @@ SiPDrive/
 ### Current Sensing
 
 3-shunt topology with biased differential OPAMPs (EVL reference design):
-- **Shunts**: 3x 1 mR (HOSRX1206, 3W) on low-side MOSFET sources
+- **Shunts**: 3x 2 mR (SME08A1FR002T, 0805 1W) on low-side MOSFET sources
 - **OPAMP gain**: 10x (Rf=15k / Rin=1.5k), mid-rail bias via 30k/30k divider on OPAMP+ nodes
 - **MOSFETs**: 6x CMSA015N06 with 20R gate resistors
 
 ### Hardware Constraints
 
 - **128 KB Flash** total - code size must be minimized
-- **SCREF overcurrent**: 0.30V threshold via 100k/10k divider (~300A trip with 1 mR shunts)
+- **SCREF overcurrent**: 0.30V threshold via 100k/10k divider (~150A trip with 2 mR shunts)
 - **MT6701 MODE**: R6 10k pullup = SSI default, JP1 jumper to GND for ABZ mode
 - **Stator NTC (R14)**: DNP solder pad for external thermistor
 
@@ -410,7 +415,7 @@ hw/SiPDrive/datasheets/rm0440-stm32g4-series-advanced-armbased-32bit-mcus-stmicr
 
 - [ ] Motor pole pairs match `config.h` (`kMotorPolePairs = 7`)
 - [ ] Encoder CPR correct (`kEncoderCountsPerRev = 16384`)
-- [ ] Shunt value correct (`kShuntOhm = 0.001`)
+- [ ] Shunt value correct (`kShuntOhm = 0.002`)
 - [ ] OPAMP gain matches hardware (`kOpampGain = 10.0`)
 - [ ] Current limits set appropriately
 - [ ] Bus voltage safe (`kBusVoltageV = 24.0f`)
@@ -465,7 +470,7 @@ Validated against STSPIN32G4, EVLSPIN32G4-ACT, MT6701, and TCAN1057A datasheets.
 - 30k/30k bias dividers on OPAMP+ nodes (PA1, PA7, PB0) - provides 1.65V mid-rail DC bias
 - 1.5k input resistors from shunt nodes to OPAMP+ inputs
 - 15k/1.5k feedback gives 10x differential gain
-- 1 mR shunts (HOSRX1206-3W) for 40A+ phase current range
+- 2 mR shunts (SME08A1FR002T, 0805 1W) — full-scale ±82.5A, ~40 mA/LSB resolution
 
 ### SCREF Divider (valid)
 
@@ -503,7 +508,7 @@ SiPDrive is inspired by [mjbots moteus](https://github.com/mjbots/moteus) but op
 |---|---|---|
 | MCU | STM32G474 (512K Flash, 128K RAM) | STM32G431 (128K Flash, 32K RAM) |
 | Gate Driver | DRV8323 (external) | STSPIN32G4 (integrated SiP) |
-| Current Sensing | 3-phase | 3-phase (3x 1 mR shunts, 10x OPAMP) |
+| Current Sensing | 3-phase | 3-phase (3x 2 mR shunts, 10x OPAMP) |
 | Build System | Bazel + mbed-os | CMake + bare-metal |
 | Control Rate | 30 kHz | 40 kHz |
 | Communication | CAN-FD + RS485 | CAN-FD only |
